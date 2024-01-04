@@ -1363,14 +1363,6 @@ def ghostFinalBestHeadMlp_deit_small_patch16_224(pretrained=False, **kwargs):
     model = _create_deit('deit_small_patch16_224', pretrained=pretrained, **model_kwargs)
     return model
 
-@register_model
-def ghostFinalBestHeadMlp_deit_base_patch16_224(pretrained=False, **kwargs):
-    """ DeiT base model @ 224x224 from paper (https://arxiv.org/abs/2012.12877).
-    ImageNet-1k weights from https://github.com/facebookresearch/deit.
-    """
-    model_kwargs = dict(patch_size=16, embed_dim=768, depth=12, num_heads=12, ghost_head=1, ghost_mlp=1, **kwargs)
-    model = _create_deit('deit_base_patch16_224', pretrained=pretrained, **model_kwargs)
-    return model
 
 ######## DeiT #############
 @register_model
