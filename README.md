@@ -99,4 +99,4 @@ python -m torch.distributed.launch --nproc_per_node=4 --use_env main.py --model 
 This repository is released under the Apache 2.0 license as found in the [LICENSE](LICENSE) file.
 
 ## References
-* [DeiT]([https://github.com/Beckschen/TransUNe](https://github.com/facebookresearch/deit)https://github.com/facebookresearch/deitt)
+* [DeiT](https://github.com/facebookresearch/deit)
